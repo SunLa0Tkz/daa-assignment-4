@@ -1,0 +1,58 @@
+PASS fixture lcs-both-empty
+PASS fixture lcs-one-empty
+PASS fixture lcs-not-contiguous
+PASS fixture lcs-case-sensitive
+PASS fixture merge-empty
+PASS fixture merge-one
+PASS fixture merge-adjacent-not-greedy
+PASS fixture merge-all-zero
+PASS fixture tree-empty
+PASS fixture tree-single-negative
+PASS fixture tree-single-positive
+PASS fixture tree-all-negative
+PASS fixture tree-parent-restricts-child
+PASS fixture naive-empty-pattern
+PASS fixture naive-last-start
+PASS fixture naive-longer-pattern
+PASS fixture kmp-both-empty
+PASS fixture kmp-overlap-fallback
+PASS fixture kmp-case-punctuation
+PASS fixture rk-collision-not-reported
+PASS fixture rk-collision-only
+PASS fixture rk-empty-text
+PASS fixture rk-negative-remainder
+PASS fixture suffix-empty
+PASS fixture suffix-one-char
+PASS fixture suffix-all-distinct
+PASS fixture suffix-all-equal-overlap
+PASS fixture suffix-banana-no-sentinel
+PASS fixture aho-empty-dictionary
+PASS fixture aho-empty-texts
+PASS fixture aho-duplicates-and-suffix
+PASS fixture aho-overlaps
+PASS fixture aho-prefix-pattern
+PASS oracle lcs 300 random cases, 0 wrong
+PASS oracle merge 200 random cases, 0 wrong
+PASS oracle tree 300 random cases, 0 wrong
+PASS oracle naive 500 random cases, 0 wrong
+PASS oracle kmp 500 random cases, 0 wrong
+PASS oracle rk 500 random cases, 0 wrong
+PASS oracle suffix 300 random cases, 0 wrong
+PASS oracle aho 300 random cases, 0 wrong
+PASS stress lcs 1000x1000 equal 0.14s
+PASS stress lcs 1000x1000 random 0.16s
+PASS stress merge n=200 max sizes 0.18s
+PASS stress tree deep chain n=100000 0.18s
+PASS stress tree star n=100000 0.16s
+PASS stress naive 3000/1500 repetitive 0.17s
+PASS stress kmp 200000/100000 repetitive 0.10s
+PASS stress kmp near-match 0.10s
+PASS stress rk 10000/2000 all candidates 0.07s
+PASS stress suffix all equal n=50000 0.23s
+PASS stress suffix periodic n=50000 0.23s
+PASS stress suffix random n=50000 0.14s
+PASS stress aho chain of suffix patterns 0.09s
+PASS stress aho 100000 states 100 texts 1.62s
+PASS stress aho 10000 duplicates 0.10s
+PASS mixed tasks in one process
+0 failure(s)

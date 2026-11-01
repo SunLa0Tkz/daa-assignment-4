@@ -1,0 +1,33 @@
+{"name":"lcs-both-empty","input":{"task":"lcs","a":"","b":""},"expected":{"length":0,"sequence":""}}
+{"name":"lcs-one-empty","input":{"task":"lcs","a":"abc","b":""},"expected":{"length":0,"sequence":""}}
+{"name":"lcs-not-contiguous","input":{"task":"lcs","a":"tea_time","b":"team"},"expected":{"length":4,"sequence":"team"}}
+{"name":"lcs-case-sensitive","input":{"task":"lcs","a":"ABC","b":"abc"},"expected":{"length":0,"sequence":""}}
+{"name":"merge-empty","input":{"task":"merge","sizes":[]},"expected":{"cost":0,"plan":[]}}
+{"name":"merge-one","input":{"task":"merge","sizes":[7]},"expected":{"cost":0,"plan":[]}}
+{"name":"merge-adjacent-not-greedy","input":{"task":"merge","sizes":[5,100,5]},"expected":{"cost":215}}
+{"name":"merge-all-zero","input":{"task":"merge","sizes":[0,0,0]},"expected":{"cost":0}}
+{"name":"tree-empty","input":{"task":"tree","n":0,"weights":[],"edges":[]},"expected":{"weight":0,"selected":[]}}
+{"name":"tree-single-negative","input":{"task":"tree","n":1,"weights":[-5],"edges":[]},"expected":{"weight":0,"selected":[]}}
+{"name":"tree-single-positive","input":{"task":"tree","n":1,"weights":[5],"edges":[]},"expected":{"weight":5,"selected":[0]}}
+{"name":"tree-all-negative","input":{"task":"tree","n":3,"weights":[-1,-2,-3],"edges":[[0,1],[1,2]]},"expected":{"weight":0,"selected":[]}}
+{"name":"tree-parent-restricts-child","input":{"task":"tree","n":3,"weights":[4,9,6],"edges":[[0,1],[1,2]]},"expected":{"weight":10,"selected":[0,2]}}
+{"name":"naive-empty-pattern","input":{"task":"naive","text":"abc","pattern":""},"expected":{"positions":[0,1,2,3]}}
+{"name":"naive-last-start","input":{"task":"naive","text":"abab","pattern":"ab"},"expected":{"positions":[0,2]}}
+{"name":"naive-longer-pattern","input":{"task":"naive","text":"ab","pattern":"abc"},"expected":{"positions":[]}}
+{"name":"kmp-both-empty","input":{"task":"kmp","text":"","pattern":""},"expected":{"positions":[0]}}
+{"name":"kmp-overlap-fallback","input":{"task":"kmp","text":"abababa","pattern":"aba"},"expected":{"positions":[0,2,4]}}
+{"name":"kmp-case-punctuation","input":{"task":"kmp","text":"A a, a!","pattern":"a"},"expected":{"positions":[2,5]}}
+{"name":"rk-collision-not-reported","input":{"task":"rk","text":"abdj","pattern":"ab"},"expected":{"positions":[0]}}
+{"name":"rk-collision-only","input":{"task":"rk","text":"dj","pattern":"ab"},"expected":{"positions":[]}}
+{"name":"rk-empty-text","input":{"task":"rk","text":"","pattern":"a"},"expected":{"positions":[]}}
+{"name":"rk-negative-remainder","input":{"task":"rk","text":"~~ ~ ","pattern":"~ "},"expected":{"positions":[1,3]}}
+{"name":"suffix-empty","input":{"task":"suffix","text":""},"expected":{"sa":[],"lcp":[],"repeated":""}}
+{"name":"suffix-one-char","input":{"task":"suffix","text":"x"},"expected":{"sa":[0],"lcp":[0],"repeated":""}}
+{"name":"suffix-all-distinct","input":{"task":"suffix","text":"abc"},"expected":{"sa":[0,1,2],"lcp":[0,0,0],"repeated":""}}
+{"name":"suffix-all-equal-overlap","input":{"task":"suffix","text":"aaaa"},"expected":{"sa":[3,2,1,0],"lcp":[0,1,2,3],"repeated":"aaa"}}
+{"name":"suffix-banana-no-sentinel","input":{"task":"suffix","text":"banana"},"expected":{"sa":[5,3,1,0,4,2],"lcp":[0,1,3,0,0,2],"repeated":"ana"}}
+{"name":"aho-empty-dictionary","input":{"task":"aho","patterns":[],"texts":["abc",""]},"expected":{"counts":[[],[]]}}
+{"name":"aho-empty-texts","input":{"task":"aho","patterns":["a"],"texts":[]},"expected":{"counts":[]}}
+{"name":"aho-duplicates-and-suffix","input":{"task":"aho","patterns":["he","she","he"],"texts":["sheshe","sheshe",""]},"expected":{"counts":[[2,2,2],[2,2,2],[0,0,0]]}}
+{"name":"aho-overlaps","input":{"task":"aho","patterns":["aa","a"],"texts":["aaaa"]},"expected":{"counts":[[3,4]]}}
+{"name":"aho-prefix-pattern","input":{"task":"aho","patterns":["ab","abc","bc","c"],"texts":["abcabc"]},"expected":{"counts":[[2,2,2,2]]}}

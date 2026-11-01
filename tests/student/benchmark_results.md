@@ -1,0 +1,29 @@
+|Case|n|m|Seed/generator|Algorithm|Run 1|Run 2|Run 3|Median|Correct outputs checked|
+|---|---:|---:|---|---|---:|---:|---:|---:|---|
+|random|500|50|20261101/benchmark.py|naive|0.038|0.037|0.037|0.037|yes (z=1)|
+|random|500|50|20261101/benchmark.py|kmp|0.043|0.037|0.037|0.037|yes (z=1)|
+|random|500|50|20261101/benchmark.py|rk|0.087|0.087|0.098|0.087|yes (z=1)|
+|repetitive|500|50|20261101/benchmark.py|naive|1.258|1.254|1.249|1.254|yes (z=0)|
+|repetitive|500|50|20261101/benchmark.py|kmp|0.072|0.072|0.071|0.072|yes (z=0)|
+|repetitive|500|50|20261101/benchmark.py|rk|0.085|0.089|0.086|0.086|yes (z=0)|
+|repetitive-match|500|50|20261101/benchmark.py|naive|1.305|1.309|1.300|1.305|yes (z=451)|
+|repetitive-match|500|50|20261101/benchmark.py|kmp|0.075|0.079|0.074|0.075|yes (z=451)|
+|repetitive-match|500|50|20261101/benchmark.py|rk|0.133|0.134|0.130|0.133|yes (z=451)|
+|random|1500|150|20261101/benchmark.py|naive|0.115|0.111|0.110|0.111|yes (z=1)|
+|random|1500|150|20261101/benchmark.py|kmp|0.106|0.106|0.105|0.106|yes (z=1)|
+|random|1500|150|20261101/benchmark.py|rk|0.289|0.283|0.295|0.289|yes (z=1)|
+|repetitive|1500|150|20261101/benchmark.py|naive|11.862|12.326|12.080|12.080|yes (z=0)|
+|repetitive|1500|150|20261101/benchmark.py|kmp|0.222|0.220|0.223|0.222|yes (z=0)|
+|repetitive|1500|150|20261101/benchmark.py|rk|0.283|0.276|0.279|0.279|yes (z=0)|
+|repetitive-match|1500|150|20261101/benchmark.py|naive|11.424|11.705|11.712|11.705|yes (z=1351)|
+|repetitive-match|1500|150|20261101/benchmark.py|kmp|0.233|0.237|0.230|0.233|yes (z=1351)|
+|repetitive-match|1500|150|20261101/benchmark.py|rk|0.410|0.411|0.397|0.410|yes (z=1351)|
+|random|3000|300|20261101/benchmark.py|naive|0.236|0.240|0.235|0.236|yes (z=1)|
+|random|3000|300|20261101/benchmark.py|kmp|0.216|0.217|0.216|0.216|yes (z=1)|
+|random|3000|300|20261101/benchmark.py|rk|0.558|0.555|0.556|0.556|yes (z=1)|
+|repetitive|3000|300|20261101/benchmark.py|naive|49.689|47.172|48.455|48.455|yes (z=0)|
+|repetitive|3000|300|20261101/benchmark.py|kmp|0.486|0.483|0.477|0.483|yes (z=0)|
+|repetitive|3000|300|20261101/benchmark.py|rk|0.530|0.518|0.519|0.519|yes (z=0)|
+|repetitive-match|3000|300|20261101/benchmark.py|naive|49.180|49.313|48.659|49.180|yes (z=2701)|
+|repetitive-match|3000|300|20261101/benchmark.py|kmp|0.486|0.488|0.511|0.488|yes (z=2701)|
+|repetitive-match|3000|300|20261101/benchmark.py|rk|0.891|0.887|0.876|0.887|yes (z=2701)|
